@@ -1,0 +1,28 @@
+h1 {
+	text-align: center;
+	font-size: 47px;
+	color: white;
+}
+
+img {
+    max-width: 500px;
+    height: auto;
+    transition: 0.3s ease-in-out; /* --ñ funfa no hover-- */
+}
+
+img:hover {
+    transform: scale(1.1);
+	transition: 0.3s ease-in-out; /* --vai ficar aí tbm-- */
+}
+
+.banner {
+	max-width: 800px;
+	height: 300px;
+	background-image: url("img/fundo.jpg");
+	background-size: cover;
+}
+
+.galeria {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
