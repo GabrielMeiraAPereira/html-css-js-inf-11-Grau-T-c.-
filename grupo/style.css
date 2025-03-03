@@ -26,7 +26,7 @@ hr {
 a {
 	font-size: 24px;
 	margin: 40px;
-	color: Crimson;
+	color: steelblue;
 	transition: color 0.3s ease-in-out;
 }
 a:hover {
