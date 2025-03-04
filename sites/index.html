@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zé Tech Portal</title>
+    
+	<link rel="stylesheet" href="style.css">
+	
+	<script>
+	    /*---
+		function = função = fazer algo.
+		var = variável = receber valor(es).
+		---*/
+	    function mudacor() {
+            var escolhecor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = escolhecor;
+        }
+	</script>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Zé Tech Portal</h1>
+        <form>
+            <label for="cor">Cor (JS-teste):</label>
+            <select id="cor" name="cor" onchange="mudacor()">
+                <option value="">Selecione...</option>
+                <option value="lightgray">LightGray - padrão</option>
+				<option value="lightsteelblue">LightSteelBlue</option>
+            </select>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Notícias)</a></li>
+            <li>
+                <a href="#">Contato</a>
+                <ul class="submenu">
+                    <li><a href="membros.html">Membros do grupo</a></li>
+                    <li><a href="pix.html">DONATE!</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	
+	<div class="centro">
+		    <a href="notícia.html">
+		        <button>
+			        <img width="300" height="auto" align="left" src="img/A.jpg">
+		            <p>Qual será o hardware necessário para rodar GTA6? Vamos descobrir!</p>
+				    <p><i>27/02/2025</i></p>
+		        </button>
+		    </a>
+		</div>
+</body>
+</html>

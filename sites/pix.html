@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zé Tech Portal</title>
+    
+	<link rel="stylesheet" href="style.css">
+	
+	<script>
+	    /*---
+		function = função = fazer algo.
+		var = variável = receber valor(es).
+		---*/
+	    function mudacor() {
+            var escolhecor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = escolhecor;
+        }
+	</script>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Zé Tech Portal</h1>
+        <form>
+            <label for="cor">Cor (JS-teste):</label>
+            <select id="cor" name="cor" onchange="mudacor()">
+                <option value="">Selecione...</option>
+                <option value="lightgray">LightGray - padrão</option>
+				<option value="lightsteelblue">LightSteelBlue</option>
+            </select>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Notícias)</a></li>
+            <li>
+                <a href="#">Contato</a>
+                <ul class="submenu">
+                    <li><a href="membros.html">Membros do grupo</a></li>
+                    <li><a href="pix.html">DONATE!</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	
+	<p> manda um pix aí pra incentivar </P>
+	<img width="874" height="490" src="img/pix.jpg" alt="chave pix telefone:???">
+</body>
+</html>

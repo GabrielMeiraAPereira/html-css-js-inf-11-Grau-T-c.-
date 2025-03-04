@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zé Tech Portal</title>
+    
+	<link rel="stylesheet" href="style.css">
+	<style>
+	    .borda {
+	        border: 2px solid black;
+	        background-color: lightgray;
+	        margin: 2px;
+        }
+	</style>
+	
+	<script>
+	    /*---
+		function = função = fazer algo.
+		var = variável = receber valor(es).
+		---*/
+	    function mudacor() {
+            var escolhecor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = escolhecor;
+        }
+	</script>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Zé Tech Portal</h1>
+        <form>
+            <label for="cor">Cor (JS-teste):</label>
+            <select id="cor" name="cor" onchange="mudacor()">
+                <option value="">Selecione...</option>
+                <option value="lightgray">LightGray - padrão</option>
+				<option value="lightsteelblue">LightSteelBlue</option>
+            </select>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Notícias)</a></li>
+            <li>
+                <a href="#">Contato</a>
+                <ul class="submenu">
+                    <li><a href="membros.html">Membros do grupo</a></li>
+                    <li><a href="pix.html">DONATE!</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	
+	<div class="borda">
+		    <h2>Gabriel Meira Alves Pereira</h2>
+		</div>
+		<div class="borda">
+		    <h2>Gustavo Henrique de Araujo Valadares</h2>
+		</div>
+		<div class="borda">
+		    <h2>Ismael de Mesquita Alves</h2>
+		</div>
+		<div class="borda">
+		    <h2>Vitor Hugo Gonçalves de Almeida</h2>
+	</div>
+</body>
+</html>

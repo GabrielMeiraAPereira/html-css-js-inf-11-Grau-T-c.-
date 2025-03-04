@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Zé Tech Portal</title>
+    
+	<link rel="stylesheet" href="style.css">
+	<style>
+	    ul {
+		    font-size: 26px;
+			list-style-position: inside;
+			list-style: none;
+			}
+	</style>
+	
+	<script>
+	    /*---
+		function = função = fazer algo.
+		var = variável = receber valor(es).
+		---*/
+	    function mudacor() {
+            var escolhecor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = escolhecor;
+        }
+	</script>
+</head>
+
+<body>
+    <div class="banner">
+        <h1>Zé Tech Portal</h1>
+        <form>
+            <label for="cor">Cor (JS-teste):</label>
+            <select id="cor" name="cor" onchange="mudacor()">
+                <option value="">Selecione...</option>
+                <option value="lightgray">LightGray - padrão</option>
+				<option value="lightsteelblue">LightSteelBlue</option>
+            </select>
+        </form>
+    </div>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Notícias)</a></li>
+            <li>
+                <a href="#">Contato</a>
+                <ul class="submenu">
+                    <li><a href="membros.html">Membros do grupo</a></li>
+                    <li><a href="pix.html">DONATE!</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	
+	<h1>Qual será o hardware necessário para rodar GTA6? Vamos descobrir!</h1>
+    <img width="874" height="490" src="img/A.jpg">
+		
+	<p>Qual será o hardware necessário para rodar GTA 6? aposto que você fez essa pergunta, supondo que você seja um jogador de PC. O lance que não sabemos, mas, podemos estimar com base no hardware atual e no game Red Dead Redemption 2. Pra isso vamos mirar 60FPS 1080p com um mix entre High e Ultra sem FSR ou DLSS. Aqui vai a minha recomendação.</P>
+	<ul>
+		<li>Ryzen 5 5600 ou coisa melhor</li>
+		<li>16GB RAM mínimo do mínimo</li>
+		<li>RTX 4060 ou coisa melhor</li>
+		<li>200-300GB de SSD para armazenar o game</li>
+	<ul>
+</body>
+</html>
