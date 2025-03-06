@@ -1,0 +1,104 @@
+/* CORPO DA PÁGINA */
+body {
+    text-align: center;
+    background-color: black;
+	margin: 0;  /* margin e padding definidos como 0 */
+    padding: 0; /* para que opções já setadas como padrão ñ alterem o valor */
+    font-family: Arial, sans-serif;
+}
+/* TÍTULOS, PARÁGRAFOS E LINHAS*/
+h1 {
+    font-size: 80px;
+    margin: 40px;
+}
+h2 {
+    font-size: 40px;
+    color: red;
+}
+h3 {
+	font-size: 40px;
+	color: orange;
+}
+p {
+    font-size: 24px;
+    color: white;
+}
+/* LINKS */
+a {
+    font-size: 24px;
+    margin: 30px;
+    color: red;
+	transition: color 0.3s ease-in-out;
+}
+a:hover {
+    color: orange;
+}
+/* LISTAS*/
+ul {
+	list-style-position: inside;
+	font-size: 30px;
+	color: white;
+}
+/* BOTÔES */
+button {
+	font-size: 30px;
+	background-color: red;
+	color: orange;
+	border: solid 2px;
+	transition: 0.3s ease-in-out, background-color 0.3s ease-in-out;
+	border-radius: 10px;
+    padding: 10px 20px; /* 1valor=vertical 2valor=horizontal */
+    cursor: pointer;
+}
+button:hover {
+	transform: scale(1.1); /* 1.1=110% */
+	background-color: darkred;
+}
+/* BANNER */
+.banner {
+    text-align: center;
+    color: orange;
+    background-image: url("img/banner.jpg");
+    padding: 30px 20px; /* 1valor=vertical 2valor=horizontal */
+}
+/* IMAGENS */
+img {
+	max-width: 400px;
+	height: auto;
+}
+/* VÍDEOS */
+video {
+	max-width: 100%;
+	height: auto;
+}
+/* REDIMENSIONAMENTO */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    h2 {
+        font-size: 32px;
+    }
+
+    h3 {
+        font-size: 32px;
+    }
+
+    p {
+        font-size: 20px;
+    }
+
+    ul {
+        font-size: 24px;
+    }
+
+    img, .img {
+        max-width: 100%;
+    }
+
+    button {
+        font-size: 24px;
+        padding: 8px 16px;
+    }
+}
