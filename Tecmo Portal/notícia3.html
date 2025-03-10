@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tecmo Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script>
+        /*---
+        function = função = fazer algo.
+        var = variável = receber valor(es).
+        ---*/
+        function mudacor() {
+            var escolhecor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = escolhecor;
+        }
+    </script>
+</head>
+
+<body>
+    <!-- banner principal -->
+    <div class="banner">
+        <img width="200" height="auto" src="img/Z.png">
+		<h1>Tecmo Portal</h1>
+        <!-- Opção para trocar a cor do site (experimento) -->
+        <form>
+            <label for="cor">Cor (JS-teste):</label>
+            <select id="cor" name="cor" onchange="mudacor()">
+                <option value="">Selecione...</option>
+                <option value="lightgray">LightGray - padrão</option>
+				<option value="lightsteelblue">LightSteelBlue</option>
+            </select>
+        </form>
+    </div>
+    <!-- Menu e submenus (em produção) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Notícias)</a></li>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="submenu">
+                    <li><a href="#">Submenu1</a></li>
+                    <li><a href="#">Submenu2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="noticia">
+        <img width="300" height="auto" align="center" src="img\EduAR plataforma de realidade aumentada para educação.png">
+
+        <h1>Transformação Digital: Start-up Brasileira Lança Plataforma de Realidade Aumentada para Educação</h1>
+		
+        <p>São Paulo, 08 de Março de 2025 – Em um movimento ousado para transformar a educação no Brasil, a EduTech, uma
+            start-up de tecnologia educacional, lançou hoje sua nova plataforma de realidade aumentada, chamada "EduAR",
+            que promete revolucionar a maneira como os estudantes interagem com conteúdos educacionais.
+        </p>
+        <p>A EduAR utiliza tecnologias avançadas de realidade aumentada (AR) para criar experiências de aprendizado
+            imersivas e interativas. Com essa plataforma, os estudantes podem explorar conceitos complexos de maneira
+            visual e prática, tornando o aprendizado mais envolvente e eficaz.
+        </p>
+        <p>Gabriela Souza, fundadora e CEO da EduTech, explicou que a ideia surgiu da necessidade de proporcionar aos
+            estudantes um método de aprendizado que vá além dos livros e aulas tradicionais. "Nosso objetivo é trazer a
+            educação para o século XXI, utilizando as melhores ferramentas tecnológicas disponíveis. A EduAR permite que
+            os estudantes vejam e interajam com o conteúdo de formas que antes eram inimagináveis", afirmou Souza.
+        </p>
+        <p>A plataforma já foi testada em diversas escolas e universidades, mostrando resultados impressionantes.
+            Estudantes que utilizaram a EduAR apresentaram um aumento de 30% na retenção de informações e um crescimento
+            de 20% nas notas. Carlos Pereira, professor de física do Colégio Estadual de São Paulo, elogiou a
+            tecnologia. "A EduAR tem sido um divisor de águas em nossas aulas. Os alunos estão mais engajados e
+            conseguem entender conceitos complexos de maneira muito mais fácil", disse Pereira.
+
+        </p>
+        <p>Além das funcionalidades educacionais, a EduAR também oferece uma biblioteca de recursos digitais, incluindo
+            modelos tridimensionais, simulações interativas e vídeos educativos. Esses recursos são continuamente
+            atualizados e podem ser adaptados para diferentes disciplinas e níveis de ensino.
+
+        </p>
+        <p>A EduTech está em negociações com várias instituições de ensino para implementar a plataforma em suas
+            currículas. A expectativa é que a EduAR se torne uma ferramenta essencial na educação brasileira, permitindo
+            que mais estudantes tenham acesso a uma aprendizagem de qualidade.
+
+        </p>
+        <p>Com o lançamento da EduAR, a EduTech solidifica sua posição como líder em inovação educacional no Brasil e
+            contribui para o avanço da educação digital no país. "Estamos empolgados com o potencial da EduAR e
+            acreditamos que essa é apenas o início de uma transformação digital na educação", concluiu Gabriela Souza. (Texto feito por I.A.)
+        </p>
+    </div>
+	<!-- Roda pé -->
+	<footer>
+	    <p>© 2025 Zé Tecmo Portal. Todos os direitos reservados.</p>
+	</footer>
+</body>
+
+</html>

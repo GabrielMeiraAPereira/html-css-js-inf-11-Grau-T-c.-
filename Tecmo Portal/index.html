@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tecmo Portal</title>
+    
+	<link rel="stylesheet" href="style.css">
+	
+	<style> <!-- Gerado por IA -->
+	.destaque {
+        background-color: #f4f4f4;
+        border: 1px solid #ccc;
+        padding: 20px;
+        margin-bottom: 20px auto; /auto para centralizar */
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+		width: 80px;
+		max-width: 800px;
+    }
+    .destaque button {
+        background-color: lightgray;
+        color: white;
+        border: 2px solid balck;
+        padding: 20px;
+        margin: 20px auto;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 80%;
+        max-width: 800px;
+    }
+    .destaque img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
+    .destaque p {
+        font-size: 18px;
+        color: #333;
+    }
+    .destaque .resumo {
+        font-size: 16px;
+        color: #666;
+        max-height: 50px; /* Resumo comprimido */
+        overflow: hidden;
+        transition: max-height 0.3s ease-out;
+    }
+    .destaque .expandir {
+        color: blue;
+        cursor: pointer;
+    }
+    .destaque:hover .resumo {
+        max-height: none; /* Expande o resumo ao passar o mouse */
+    }
+	</style>
+	
+	<script>
+	    /*--- Feito por de IA
+		function = função = fazer algo.
+		var = variável = receber valor(es).
+		---*/
+	    function mudacor() {
+            var escolhecor = document.getElementById("cor").value;
+            document.body.style.backgroundColor = escolhecor;
+        }
+	</script>
+</head>
+
+<body>
+    <!-- banner principal -->
+    <div class="banner">
+		<img width="200" height="auto" src="img/Z.png">
+        <h1>Tecmo Portal</h1>
+        <!-- Opção para trocar a cor do site (experimento) -->
+        <form>
+            <label for="cor">Cor (JS-teste):</label>
+            <select id="cor" name="cor" onchange="mudacor()">
+                <option value="">Selecione...</option>
+                <option value="lightgray">LightGray - padrão</option>
+				<option value="lightsteelblue">LightSteelBlue</option>
+            </select>
+        </form>
+    </div>
+    <!-- Menu e submenus (em produção) -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home (Notícias)</a></li>
+            <li>
+                <a href="#">Menu</a>
+                <ul class="submenu">
+                    <li><a href="#">Submenu1</a></li>
+                    <li><a href="#">Submenu2</a></li>
+                </ul>
+            </li>
+        </ul>
+    </nav>
+	<!-- gerado por IA -->
+    <!-- Notícia principal/destaque -->
+    <div class="destaque">
+        <a href="notícia.html" class="destaque"> <!-- class="destaque" (IA adição) -->
+            <button>
+                <img width="300" height="auto" src="img/A.jpg">
+                <p><strong>Notícia em Destaque: </strong>Qual será o hardware necessário para rodar GTA6?</p>
+                <p class="resumo">Se você está se perguntando isso, imagino que seja um jogador de PC ansioso para saber se sua máquina vai dar conta do recado.<span class="expandir"> Leia mais</span></p>
+            </button>
+        </a>
+    </div>
+	<!-- Notícias secundárias (estilo grade) -->
+	<h1> Todas as Notícias </h1>
+	<div class="centro">
+		<a href="notícia3.html">
+		    <button>
+			    <img width="300" height="auto" align="left" src="img\EduAR plataforma de realidade aumentada para educação.png">
+		        <p>Transformação Digital: Start-up Brasileira Lança Plataforma de Realidade Aumentada para Educação</p>
+				<p><i>08/03/2025</i></p>
+		    </button>
+		</a>
+
+		<a href="notícia2.html">
+		    <button>
+			    <img width="300" height="auto" align="left" src="img\PreditivaAI, inteligência artificial inovadora.png">
+		        <p>Inovação Revolucionária: Nova IA da BrasoTech Capaz de Prever Falhas em Equipamentos Industriais</p>
+				<p><i>08/03/2025</i></p>
+		    </button>
+		</a>
+
+		<a href="notícia.html">
+		    <button>
+			    <img width="300" height="auto" align="left" src="img/A.jpg">
+		        <p>Qual será o hardware necessário para rodar GTA6?</p>
+				<p><i>27/02/2025</i></p>
+		    </button>
+		</a>
+	</div>
+    <!-- Roda pé -->
+	<footer>
+	    <p>© 2025 Zé Tecmo Portal. Todos os direitos reservados.</p>
+	</footer>
+</body>
+</html>
