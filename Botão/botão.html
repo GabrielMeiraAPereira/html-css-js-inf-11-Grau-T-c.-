@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Botão</title>
+    </head>
+    <body>
+        <script>
+            function Botao() {
+                // Cria um botão no DOM (Document Object Model)
+                var BotaoVoltar = document.createElement("button");
+                // Texto do botão
+                BotaoVoltar.innerText = "Voltar";
+                // ID do botão
+                BotaoVoltar.id = "btnVoltar";
+                // Adiciona um evento de clique
+                BotaoVoltar.onclick = function() {
+                    // Faz a página voltar para a anterior
+                    window.history.back();
+                };
+                // Adiciona o botão ao corpo da página
+                document.body.appendChild(BotaoVoltar);
+            }
+            // Executa a função quando a página carrega
+            window.onload = Botao;
+        </script>
+    </body>
+</html>
